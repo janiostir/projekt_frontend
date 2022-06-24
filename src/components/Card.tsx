@@ -5,20 +5,13 @@ const Card = ({cardData}:{cardData:any}) => {
         <>
             <div className="col">
                 <div className="card shadow-sm">
-                    <svg className="bd-placeholder-img card-img-top" width="100%" height="225"
-                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                         preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
-
+                    <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg" alt="Thumbnail" />
                     <div className="card-body">
                         <h5>{cardData.title}</h5>
                         <p className="card-text">{cardData.content}</p>
                         <div className="d-flex justify-content-between align-items-center">
                             <div className="btn-group">
                                 <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
                         </div>
                     </div>
