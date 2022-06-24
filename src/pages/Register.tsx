@@ -11,7 +11,7 @@ const Register = () => {
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
 
-    const[errorText, setErrorText] = useState('');
+    const[error, setErrorText] = useState('');
 
     const[redirect, setRedirect] = useState(false);
 
@@ -27,15 +27,14 @@ const Register = () => {
         const res = await axios.post('http://localhost:8080/auth/register',data);
         console.log(res);
 
-        // success pri registraciji -> preusmeritev na login page
+        //Success pri registraciji -> preusmeritev na login page
         if (res.status == 201) {
             setRedirect(true);
         }
 
-        //FIXME backend s try - catch v primeru errorja
         if (res.status != 201) {
             setErrorText('Napaka v podatkih');
-            console.log(errorText);
+            console.log(error);
         }
 
     }
@@ -46,8 +45,8 @@ const Register = () => {
 
     return (
         <>
-            <Nav />
-            <h2>{errorText}</h2>
+            <h1>Register</h1>
+            <h2>{error}</h2>
             <form onSubmit={submit} className="form-signin w-100 m-auto">
                 <div className="form-floating">
                     <input type="text" className="form-control" id="floatingFirstName"
@@ -75,7 +74,6 @@ const Register = () => {
                 </div>
                 <button className="w-100 btn btn-lg btn-primary" type="submit">Register</button>
             </form>
-            <Footer />
         </>
     )
 }
