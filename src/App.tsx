@@ -44,6 +44,7 @@ function App() {
           <Route path={'/register'} element={<Register />} />
           <Route path={'/create'} element={<CreatePost />} />
           <Route path={'/me'} element={<Me user={user}/>} />
+          <Route path={'/post/:id'} element={<Post />} />
         </Routes>
       </BrowserRouter>
     </Wrapper>
