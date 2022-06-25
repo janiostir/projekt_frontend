@@ -9,6 +9,8 @@ import Wrapper from "./components/Wrapper";
 import axios from "axios";
 import {UserDto} from "./classes/user.dto";
 import Me from "./pages/Me";
+import Post from "./pages/Post";
+import post from "./pages/Post";
 
 function App() {
 
@@ -40,7 +42,7 @@ function App() {
           <Route path={'/'} element={<Home />} />
           <Route path={'/login'} element={<Login />} />
           <Route path={'/register'} element={<Register />} />
-          <Route path={'/create'} element={<CreatePost/>} />
+          <Route path={'/create'} element={<CreatePost />} />
           <Route path={'/me'} element={<Me user={user}/>} />
         </Routes>
       </BrowserRouter>

@@ -10,6 +10,7 @@ const Wrapper = ({children}: Props) => {
         <>
             <Nav />
             <main>
+
                 {children}
             </main>
             <Footer />

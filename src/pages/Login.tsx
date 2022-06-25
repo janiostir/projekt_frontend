@@ -42,7 +42,7 @@ const Login = () => {
 
     return (
         <>
-            <h1>Login</h1>
+            <h1 style={{textAlign: "center"}}>Login</h1>
             <h2>{error}</h2>
             <form onSubmit={submit} className="form-signin w-100 m-auto">
 

@@ -66,7 +66,7 @@ const CreatePost = () => {
                         })}
 
                     </select>
-                    <label htmlFor="floatingSelect">Izberi predmet</label>
+                    <label htmlFor="floatingSelect">Choose subject</label>
                 </div>
 
                 <div className="form-floating">
