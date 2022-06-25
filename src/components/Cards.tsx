@@ -6,7 +6,7 @@ const Cards = () => {
     const[cards,setCards] = useState([]);
 
     const loadCards = async () => {
-        const res = await axios.get('http://localhost:8080/post',{withCredentials: true});
+        const res = await axios.get('http://localhost:8080/post/posts',{withCredentials: true});
         if (res.status === 200) {
             console.log(res.data);
             setCards(res.data);
