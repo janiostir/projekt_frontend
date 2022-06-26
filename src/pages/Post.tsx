@@ -76,16 +76,16 @@ const Post = () => {
 
                 <form onSubmit={submit} className="form-signin w-100 m-auto">
                     <div className="form-floating">
-                        <input type="text" className="form-control" id="floatingInput" placeholder="naslov"
+                        <input type="text" className="form-control" id="floatingInput" placeholder="Title"
                                onChange={(e) => setTitle(e.target.value)}/>
-                        <label htmlFor="floatingInput">Naslov</label>
+                        <label htmlFor="floatingInput">Title</label>
                     </div>
                     <div className="form-floating">
 
-          <textarea className="form-control" id="floatingContent" rows={8} style={styleTextArea} placeholder="Vnesi vsebino" onChange={(e)=>setContent(e.target.value)}>
+          <textarea className="form-control" id="floatingContent" rows={8} style={styleTextArea} placeholder="Content" onChange={(e)=>setContent(e.target.value)}>
           </textarea>
 
-                        <label htmlFor="floatingContent">Vsebina</label>
+                        <label htmlFor="floatingContent">Content</label>
 
                     </div>
 
